@@ -1,2 +1,144 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<section id="home" class="section-1 page-1">
+  <div class="header">
+    <h2>Hi, I'm <span>Jackson Jaensch</span>.</h2>
+    <h3>I'm a full-stack web developer</h3>
+  </div>
+  <a href="#portfolio">
+    <div class="button">
+      Check out my work
+    </div>
+  </a>
+</section>
+<div class="navbar">
+  <div class="small-logo">
+    <%= image_tag "JLogo-1.svg", alt: "Cursive letter J in green circular logo" %>
+  </div>
+  <div class="nav-links">
+    <a href="#home"><div class="link">Home</div></a>
+    <a href="#about"><div class="link">About</div></a>
+    <a href="#portfolio"><div class="link">Portfolio</div></a>
+    <a href="#contact"><div class="link">Contact</div></a>
+    <a href="#pdf_link"><div class="link">Resume</div></a>
+  </div>
+</div>
+<section class="page-2" id="about">
+<div class="container">
+  <div class="container flex-col">
+    <h2>ABOUT</h2>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-img">
+        <%= image_tag "Jtime.svg", alt: "A circular green loog with a calendar graphic" %>
+      </div>
+      <div class="card-content">
+        <h4>Punctuality/Organisation</h4>
+        <p>I am reliable and organised. The simplest things are often the most important</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <%= image_tag "JBestPractice.svg", alt: "A circular green loog with a congratulatory ribbon graphic" %>
+      </div>
+      <div class="card-content">
+        <h4>Best Practice</h4>
+        <p>I take pride in my ability to write and maintain clean code as well as my interest in new technologies</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <%= image_tag "JCommunication.svg", alt: "A circular green loog with a graphic of two speech bubbles" %>
+      </div>
+      <div class="card-content">
+        <h4>Communication</h4>
+        <p>Having worked in teams both large and small; I understand the necessity for high-quality communication</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <%= image_tag "Jthink.svg", alt: "A circular green logo with a person's head with cogs turning" %>
+      </div>
+      <div class="card-content">
+        <h4>Learning</h4>
+        <p>I am obsessed with learning. New books, new experienaces, new people; Any opportunity to open my mind</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="portrait">
+      <%= image_tag "mugshot.png", alt: "Portrait of Jackson" %>
+      <div class="about-content">
+        <h4>Meet Jackson</h4>
+        <p>I am a full-stack freelance web developer in Adelaide, South Australia.<br> I love using code to turn ideas into reality. <br> My skills include...
+          <ul class="skills">
+            <li><span>✔️</span> Ruby on Rails</li>
+            <li><span>✔️</span> HTML5</li>
+            <li><span>✔️</span> CSS3</li>
+            <li><span>✔️</span> JavaScript ES6</li>
+            <li><span>✔️</span> PostgrSQL/SQL</li>
+            <li><span>✔️</span> Git/Github</li>
+          </ul>
+          Away from the keyboard, my passions are decentralised technology, hiking/camping in nature, and small house architecture. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="page-3 flex-col" id="portfolio">
+  <div class="container">
+    <div class="container flex-col">
+      <h2>PORTFOLIO</h2>
+    </div>
+    <div class="flex-col w-100">
+      <div class="project-headers">
+        <div><h4>Deepwork</h4></div>
+        <div><h4>Defit</h4></div>
+      </div>
+    <div class="projects flex">
+      <a href="http://www.deepwork.pro/" target="_blank"><%= image_tag "Deepwork3.png", alt: "Thumbnail of Deepwork.pro webapp", id:"first-link" %></a>
+      <a href="https://defit.herokuapp.com/" target="_blank"><%= image_tag "Defit3.png", alt: "Thumbnail of DeFit heroku webapp" %></a>
+    </div>
+    <div class="projects-content">
+      <p>These are two of my favourite projects I've had the pleasure of working on. <br> The first, a webapp designed to increase focus time and limit distractions using proven mind hacks. The second, an app designed to bring together personal trainers without a space to train clients, with gym owners who would like to make extra money renting out their space to professionals.</p>
+      <p>Feel free to click on them and have a look around!</p>
+    </div>
+  </div>
+</section>
+<section id="contact" class="flex-col page-4">
+  <div class="container flex-col">
+    <h2 id="contact-header">Contact</h2>
+  </div>
+  <div class="form-header">
+    Have a question or want to work together?
+  </div>
+  <div class="form-container">
+    <form action="https://formsubmit.co/jackson.jaensch14@gmail.com" method="post">
+      <input class="input" type="text" name="name" placeholder="Name" required>
+      <input class="input" type="email" name="email" placeholder="Email" required>
+      <textarea class="input" name="message" placeholder="Your message"></textarea>
+      <input class="button" type="submit" id="submit" value="Send">
+    </form>
+  </div>
+</section>
+<footer>
+  <a href="#home">
+    <div class="home-button flex">
+      <i class="fa-solid fa-circle-chevron-up"></i>
+    </div>
+  </a>
+  <div class="flex">
+    <a href="https://github.com/SkiltonJ" target="_blank">
+      <div class="icon flex">
+        <i class="fa-brands fa-github"></i>
+      </div>
+    </a>
+    <a href="https://www.linkedin.com/in/jackson-jaensch-7a8301252/" target="_blank">
+      <div class="icon flex">
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </a>
+  </div>
+  <div>
+    <p class="footer-text">Jackson Jaensch <span>@ 2022</span></p>
+  </div>
+</footer>

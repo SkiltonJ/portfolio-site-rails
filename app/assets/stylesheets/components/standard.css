@@ -1,0 +1,360 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+/* Page dimensions */
+.page-1, .page-2, .page-3, .page-4 {
+  width: 100vw;
+  font-family: 'Mukta';
+}
+.page-1 {
+  height: 100vh;
+}
+.page-2 {
+  height: 140vh;
+}
+.page-3 {
+  height: 105vh;
+}
+.page-4 {
+  height: 90vh;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(blue-grey.jpg);
+  background-size: cover;
+}
+
+.header {
+  text-align: center;
+}
+
+.header > h2, .header > h3 {
+  color: white;
+}
+
+.header > h2 {
+  font-size: 4.5em;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.header > h3 {
+  font-size: 2em;
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.header > h2 > span {
+  color: #07C5BF;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.button {
+  border: white 2px solid;
+  padding: 7px 14px;
+  color: white;
+  font-size: 1.6em;
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: #07C5BF 2px solid;
+  background-color: #07C5BF;
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #002638;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  border-bottom: 4px solid #07C5BF;
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+
+.link {
+  margin: 6px 12px;
+  color: white;
+  font-family: 'Mukta';
+}
+
+.link:hover {
+  color: #FF477B;
+  transition: 0.5s;
+}
+
+.small-logo > img {
+  width: 45px;
+  height: 45px;
+  display: block;
+  margin: 0.5em;
+}
+
+/* Section 2 */
+
+#about {
+  background: white;
+  padding: 5vh 0 5vh;
+  color: #002638;
+}
+
+.container > h2 {
+  font-size: 3em;
+  border-bottom: 6px solid #002638;
+  margin-bottom: 1em;
+}
+
+/* Cards */
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 12px;
+  justify-items: center;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.card-img > img {
+  width: 150px;
+  height: auto;
+}
+
+/* Self Image */
+.portrait {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 2em;
+  border-top: 2px solid #07C5BF;
+  border-bottom: 2px solid #07C5BF;
+}
+.portrait > img {
+  height: 450px;
+  width: auto;
+}
+
+.about-content {
+  width: 360px;
+  /* border: 2px solid #07C5BF;
+  border-radius: 2px;
+  padding: 6px; */
+}
+.about-content > h4 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.about-content > p {
+  margin-bottom: 0;
+}
+.about-content > ul {
+  list-style: none;
+  margin-top: 0;
+}
+.skills > li > span {
+  font-size: 10px;
+}
+/* Section 3 Portfolio */
+#portfolio {
+  background: #e4e4e4;
+  padding: 5vh 0 5vh;
+  color: #002638;
+}
+
+.project-headers {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 26px;
+}
+.project-headers > div {
+  width: 50%;
+}
+.project-headers > div > h4 {
+  margin-top: 0;
+}
+.projects {
+  margin-bottom: 2em;
+}
+.projects > a > img {
+  max-width: 99%;
+  height: auto;
+  transition: all 0.5s;
+  box-shadow: 2px 2px 16px #afafaf;
+}
+#first-link {
+  margin-right: 2em;
+}
+.projects > a > img:hover {
+  scale: 1.1;
+}
+
+.projects-content {
+  max-width: 100%;
+  font-size: 18px;
+  border-top: 2px solid #07C5BF;
+  border-bottom: 2px solid #07C5BF;
+}
+
+/* Section 4 */
+#contact {
+  background-color: #002638;
+  color: #e4e4e4;
+}
+
+#contact-header {
+  border-bottom: 6px solid #e4e4e4;
+  margin-top: 2em;
+}
+
+.form-header {
+  color: #07C5BF;
+  font-size: 24px;
+  margin-bottom: 1em;
+}
+
+.form-container {
+  width: 500px;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  background-color: #001a27;
+  font-family: "Mukta";
+  color: #e4e4e4;
+  font-size: 18px;
+  border: 0;
+  padding: 0.5em;
+}
+
+.input::placeholder {
+  color: #b9b9b9;
+  font-family: "Mukta";
+  font-size: 18px;
+}
+
+.input:focus-visible {
+  outline: none;
+}
+#contact textarea {
+  height: 120px;
+}
+
+form {
+  display: block;
+}
+#submit {
+  float: right;
+}
+
+/* Footer */
+
+footer {
+  background-color: #001a27;
+  padding: 5vh;
+  position: relative;
+}
+
+.icon {
+  background-color: #002638;
+  height: 60px;
+  width: 60px;
+  color: #e4e4e4;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 2rem 1rem;
+  transition: all 0.5s;
+}
+.icon:hover {
+  background-color: #07C5BF;
+  scale: 1.1;
+}
+
+.footer-text {
+  color: #afafaf;
+  font-family: "Mukta";
+  text-align: center;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.footer-text > span {
+  color: #FF477B;
+}
+
+.home-button {
+  background-color: #FF477B;
+  color: #e4e4e4;
+  height: 60px;
+  width: 60px;
+  color: #e4e4e4;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0 1rem;
+  transition: all 0.5s;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: -30px;
+  opacity: 0.9;
+}
+.home-button:hover {
+  scale: 1.1;
+}
+/* pink = #FF477B, blue = #07C5BF, dark blue = #002638 color */
+/* Create js link active on whichever page someone is on */
+/* Currently creating cards for my about me section, need to add GH repo/commit */
