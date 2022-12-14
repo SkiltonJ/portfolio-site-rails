@@ -355,6 +355,10 @@ footer {
 .home-button:hover {
   scale: 1.1;
 }
+
+.invalid-feedback {
+  color: #fc3030;
+}
 /* pink = #FF477B, blue = #07C5BF, dark blue = #002638 color */
 /* Create js link active on whichever page someone is on */
 /* Currently creating cards for my about me section, need to add GH repo/commit */

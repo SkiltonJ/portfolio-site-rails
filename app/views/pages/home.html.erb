@@ -112,12 +112,18 @@
     Have a question or want to work together?
   </div>
   <div class="form-container">
-    <form action="https://formsubmit.co/jackson.jaensch14@gmail.com" method="post">
+    <%# <form action="https://formsubmit.co/jackson.jaensch14@gmail.com" method="post">
       <input class="input" type="text" name="name" placeholder="Name" required>
       <input class="input" type="email" name="email" placeholder="Email" required>
       <textarea class="input" name="message" placeholder="Your message"></textarea>
       <input class="button" type="submit" id="submit" value="Send">
-    </form>
+    </form> %>
+    <%= simple_form_for @contact do |f| %>
+      <%= f.input :name, placeholder: "Name", input_html: { class: 'input' }, label: false %>
+      <%= f.input :email, placeholder: "Email", input_html: { class: 'input' }, label: false %>
+      <%= f.input :message, as: :text, placeholder: "Your Message", input_html: { class: 'input' }, label: false %>
+      <%= f.submit value: "Send", class: "button", id: "submit" %>
+    <% end %>
   </div>
 </section>
 <footer>
