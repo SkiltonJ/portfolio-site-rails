@@ -1,3 +1,13 @@
+  <% if flash.key? :error %>
+  <div class="error">
+    <%= flash[:error] %>
+  </div>
+  <% end %>
+  <% if flash.key? :success %>
+    <div class="success">
+      <%= flash[:success] %>
+    </div>
+  <% end %>
 <section id="home" class="section-1 page-1">
   <div class="header">
     <h2>Hi, I'm <span>Jackson Jaensch</span>.</h2>
