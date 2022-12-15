@@ -145,7 +145,7 @@ a {
   transition: 0.5s;
 }
 
-.small-logo > img {
+.small-logo > a > img {
   width: 45px;
   height: 45px;
   display: block;
