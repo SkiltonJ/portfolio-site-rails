@@ -9,6 +9,9 @@
     </div>
   <% end %>
 <section id="home" class="section-1 page-1">
+  <%= link_to "Resume.pdf", target: "_blank" do %>
+    <div class="resume">Resume</div>
+  <% end %>
   <div class="header">
     <h2>Hi, I'm <span>Jackson Jaensch</span>.</h2>
     <h3>I'm a full-stack web developer</h3>
@@ -28,7 +31,9 @@
     <a href="#about"><div class="link">About</div></a>
     <a href="#portfolio"><div class="link">Portfolio</div></a>
     <a href="#contact"><div class="link">Contact</div></a>
-    <a href="#pdf_link"><div class="link">Resume</div></a>
+    <%= link_to "Resume.pdf", target: "_blank" do %>
+      <div class="link">Resume</div>
+    <% end %>
   </div>
 </div>
 <section class="page-2" id="about">

@@ -64,8 +64,18 @@ body {
   justify-content: center;
   background: url(blue-grey.jpg);
   background-size: cover;
+  position: relative;
 }
 
+.resume {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: white;
+  background-color: #FF477B;
+  padding: 7px 14px;
+  border-radius: 20px;
+}
 .header {
   text-align: center;
 }
