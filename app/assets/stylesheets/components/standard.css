@@ -228,13 +228,18 @@ a {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  font-size: 26px;
 }
 .project-headers > div {
   width: 50%;
 }
 .project-headers > div > h4 {
-  margin-top: 0;
+  /* margin-top: 0; */
+  margin: 0;
+  font-size: 26px;
+}
+.github-link {
+  margin: 0;
+  color: #002638;
 }
 .projects {
   margin-bottom: 2em;
