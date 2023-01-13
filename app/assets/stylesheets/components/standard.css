@@ -462,6 +462,10 @@ footer {
     height: 260vh;
   }
 
+  .page-3 {
+    height: 100vh;
+  }
+
   .about-content {
     width: 100%;
   }
@@ -469,4 +473,6 @@ footer {
   .project-headers {
     width: 95%;
   }
+
+
 }
