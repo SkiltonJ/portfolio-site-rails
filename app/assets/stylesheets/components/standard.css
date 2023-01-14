@@ -390,9 +390,9 @@ footer {
 /* pink = #FF477B, blue = #07C5BF, dark blue = #002638 color */
 /* Create js link active on whichever page someone is on */
 /* Currently creating cards for my about me section, need to add GH repo/commit */
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .page-2, .page-3, .page-4 {
-    height: auto;
+    height: auto !important;
   }
   .card-container {
     grid-template-columns: 1fr 1fr;
@@ -425,6 +425,20 @@ footer {
   .form-container {
     width: 85%;
   }
+  #about {
+    padding: 0;
+  }
+  .page-4 {
+    padding-bottom: 4em;
+  }
+}
+@media screen and (max-width: 820px) {
+  .page-2, .page-3 {
+    height: auto;
+  }
+  .page-4 {
+    height: 70vh;
+  }
   .project-headers > div {
     padding: 1em;
   }
@@ -433,19 +447,5 @@ footer {
   }
   .projects {
     padding: 1em;
-  }
-  #about {
-    padding: 0;
-  }
-  .page-4 {
-    padding-bottom: 4em;
-  }
-}
-@media (max-width: 820px) {
-  .page-2, .page-3 {
-    height: auto;
-  }
-  .page-4 {
-    height: 70vh;
   }
 }
