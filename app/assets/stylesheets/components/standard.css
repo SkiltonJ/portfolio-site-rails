@@ -440,12 +440,12 @@ footer {
     height: 70vh;
   }
   .project-headers > div {
-    padding: 1em;
+    padding: 2em;
   }
   .projects-content{
-    padding: 1em;
+    padding: 2em;
   }
   .projects {
-    padding: 1em;
+    padding: 2em;
   }
 }
